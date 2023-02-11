@@ -37,8 +37,8 @@ Project preview
 
 ### Links
 
-- Solution URL: [Solution in Frontend Mentor]()
-- Live Site URL: [Vercel Deploy]()
+- Solution URL: [Solution in Frontend Mentor](https://www.frontendmentor.io/solutions/responsive-advice-generator-with-html-css-and-javascript-ad9ui8pQ86)
+- Live Site URL: [Vercel Deploy](https://advice-generator-nine-nu.vercel.app/)
 
 ## My process
 
