@@ -1,0 +1,146 @@
+/*
+Font
+font-family: 'Manrope', sans-serif;
+
+Colors
+- Light Cyan: hsl(193, 38%, 86%) - Advice
+- Neon Green: hsl(150, 100%, 66%) - Button and advice number
+- Grayish Blue: hsl(217, 19%, 38%) - 
+- Dark Grayish Blue: hsl(217, 19%, 24%) - Card background
+- Dark Blue: hsl(218, 23%, 16%) - Page background
+*/
+
+:root {
+    --light-cyan: hsl(193, 38%, 86%);
+    --neon-green: hsl(150, 100%, 66%);
+    --gray-blue: hsl(217, 19%, 38%);
+    --dark-gray-blue: hsl(217, 19%, 24%);
+    --dark-blue: hsl(218, 23%, 16%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+    color: var(--light-cyan);
+}
+
+html, body {
+    min-height: 100vh;
+}
+
+body {
+    background-color: var(--dark-blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card {
+    max-width: 350px;
+    background-color: var(--dark-gray-blue);
+    padding: 20px;
+    margin: 15px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.intro-message {
+    margin: 0 20px 15px;
+}
+
+.intro-message-green {
+    color: var(--neon-green);
+}
+
+.pulse-animation {
+    margin-bottom: 15px;
+	transform: scale(1);
+	animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+	}
+
+	70% {
+		transform: scale(1);
+	}
+
+	100% {
+		transform: scale(0.95);
+	}
+}
+
+.advice-number {
+    color: var(--neon-green);
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    font-size: 0.7rem;
+    margin: 20px 0 25px;
+}
+
+.advice-text {
+    font-size: 1.55rem;
+    font-weight: 700;
+}
+
+.divider-img {
+    max-width: 100%;
+    margin: 25px 0 40px;
+}
+
+.reroll-button {
+    width: 65px;
+    height: 65px;
+    position: absolute;
+    bottom: -32px;
+    right: 140px;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--neon-green);
+    padding: 0.8em 0.8em 0.6em;
+    cursor: pointer;
+}
+
+.reroll-button:hover {
+    box-shadow: 0 0 30px var(--neon-green);
+}
+
+.attribution { 
+    font-size: 0.8rem; 
+    line-height: 2em;
+    text-align: center;
+    margin: 40px 30px 0;
+}
+
+.attribution a { 
+    color: var(--neon-green); 
+}
+
+.hidden {
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+    .card {
+        max-width: 490px;
+        padding: 20px 50px;
+    }
+
+    .advice-number {
+        margin-bottom: 20px;
+    }
+
+    .divider-img {
+        margin: 35px 0 45px;
+    }
+
+    .reroll-button {
+        right: 213px;
+    }
+}

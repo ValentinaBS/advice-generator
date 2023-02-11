@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <title>Frontend Mentor | Advice generator app</title>
+</head>
+<body>
+  <header>
+    <h1 class="intro-message">Generate <span class="intro-message-green">life changing</span> advice!</h1>
+    <p class="pulse-animation" id="hide-message">- Press the dice to start -</p>
+  </header>
+  <main class="card">
+    <p class="advice-number" id="advice-number">Advice #<span class="advice-number" id="advice-id">1</span></p>
+    <q class="advice-text" id="advice-quote">Remember that spiders are more afraid of you, than you are of them.</q>
+    <picture>
+      <source srcset="./images/pattern-divider-desktop.svg" media="(min-width: 768px)"/>
+      <img class="divider-img" src="./images/pattern-divider-mobile.svg" alt="" />
+    </picture>
+    <button class="reroll-button" id="new-quote"><img src="/images/icon-dice.svg" alt=""></button>
+  </main>
+  <footer class="attribution">
+    <p>*There's a 2 second delay whenever you try to generate a new advice</p>
+    <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a></p> 
+    <p>Coded by <a href="https://github.com/ValentinaBS">ValentinaBS</a></p>
+  </footer>
+  <script src="/main.js"></script>
+</body>
+</html>
